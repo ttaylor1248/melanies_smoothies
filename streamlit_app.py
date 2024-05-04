@@ -45,4 +45,5 @@ if ingredients_list:
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=TRUE)
+# st.text(fruityvice_responce.json())
+fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
